@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/home_custom_categories_iv"
+        android:layout_width="@dimen/custom_home_categories_iv_height_width"
+        android:layout_height="@dimen/custom_home_categories_iv_height_width"
+        android:scaleType="centerCrop"
+        android:src="@drawable/eye"
+        android:layout_marginStart="@dimen/custom_home_categories_iv_margin_start"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/home_custom_categories_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/custom_home_categories_name_tv_margin_top"
+        android:gravity="center"
+        android:text="textview"
+        android:textColor="@color/black"
+        android:textSize="@dimen/custom_home_categories_name_tv_text_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/home_custom_categories_iv"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="@+id/home_custom_categories_iv"
+        app:layout_constraintTop_toBottomOf="@+id/home_custom_categories_iv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

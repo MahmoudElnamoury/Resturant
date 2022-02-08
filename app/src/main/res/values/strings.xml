@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Resturant</string>
+<!--    name of pages -->
+    <string name="nav_menu_home">Home</string>
+    <string name="nav_menu_menu">Menu</string>
+    <string name="nav_menu_search">Search</string>
+    <string name="nav_menu_cart">Cart</string>
+    <string name="nav_menu_orders">Orders</string>
+<!--    home activity strings -->
+    <string name="home_category_name">Popular Catagories</string>
+    <string name="home_best_deals">Best Deal</string>
+    <string name="home_most_poplar">Most popular</string>
+<!--    list activity strings -->
+    <string name="list_tv_page_name">Menu</string>
+<!--    orders activity strings-->
+    <string name="orders_tv_page_name">Orders</string>
+<!--    cart activity strings -->
+    <string name="cart_back_btn">Back</string>
+    <string name="cart_page_name_tv">Your Cart</string>
+    <string name="cart_add_item_btn">Add More</string>
+    <string name="cart_total_price_tv">Total : $ .00</string>
+    <string name="cart_place_order_btn">Place Order</string>
+    <string name="menu_page_name_tv">Menu</string>
+    <string name="custom_order_reorder_btn">Reorder</string>
+    <string name="custom_order_cancel_order_btn">Cancel Order</string>
+
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/custom_order_tv_total_price"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="@dimen/custom_order_card_elevation"
+    app:cardCornerRadius="@dimen/custom_order_card_corner_radius"
+    app:cardUseCompatPadding="true"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/custom_order_iv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/custom_order_iv_height"
+            android:layout_marginTop="@dimen/custom_order_iv_margin_top"
+            android:scaleType="centerCrop"
+            android:src="@drawable/eye"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/custom_order_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/custom_order_rv_padding"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/custom_order_iv" />
+
+        <TextView
+            android:id="@+id/custom_order_tv_price"
+            android:layout_width="@dimen/custom_order_price_tv_width"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cart_item_shape"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/custom_order_price_tv_padding_top_bottom"
+            android:paddingBottom="@dimen/custom_order_price_tv_padding_top_bottom"
+            android:textColor="@color/black"
+            android:textSize="@dimen/custom_order_price_tv_text_size"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/custom_order_rv"
+            app:layout_constraintStart_toStartOf="@+id/custom_order_rv"
+            app:layout_constraintTop_toBottomOf="@+id/custom_order_rv" />
+
+        <Button
+            android:id="@+id/custom_order_btn_reorder"
+            android:layout_width="@dimen/custom_order_reorder_btn_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/custom_order_reorder_btn_margin_top"
+            android:text="@string/custom_order_reorder_btn"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="@+id/custom_order_tv_price"
+            app:layout_constraintTop_toBottomOf="@+id/custom_order_tv_price" />
+
+        <Button
+            android:id="@+id/custom_order_btn_cancel_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/custom_order_cancel_order_btn_margin_top"
+            android:text="@string/custom_order_cancel_order_btn"
+            android:textAllCaps="false"
+            app:layout_constraintBaseline_toBaselineOf="@id/custom_order_btn_reorder"
+            app:layout_constraintEnd_toEndOf="@+id/custom_order_tv_price"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/custom_order_btn_reorder"
+            app:layout_constraintTop_toBottomOf="@+id/custom_order_tv_price" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

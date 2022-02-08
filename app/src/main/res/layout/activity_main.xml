@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/home_drawer_layout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<!--        toolbar-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/home_toolbar"
+            android:background="@color/toolbar_color"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="@dimen/nav_view_image_width_height"
+                android:layout_height="@dimen/nav_view_image_width_height"
+                android:id="@+id/home_drawer_btn"
+                android:src="@drawable/actionbar_menu"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="@dimen/nav_view_image_margin_top"
+                />
+            <ImageView
+                android:layout_width="@dimen/nav_view_image_width_height"
+                android:layout_height="@dimen/nav_view_image_width_height"
+                android:id="@+id/home_cart_btn"
+                android:src="@drawable/cart_icon"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/nav_view_image_margin_top"
+                />
+
+        </RelativeLayout>
+<!--        most popular tv -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/home_most_popular_height"
+            android:id="@+id/home_most_categories_tv_name"
+            android:layout_below="@+id/home_toolbar"
+            android:text="@string/home_category_name"
+            android:gravity="center_vertical"
+            android:layout_marginStart="@dimen/home_heading_margin_start"
+            android:layout_marginBottom="@dimen/home_heading_margin_top_bottom"
+            android:textSize="@dimen/home_heading_text_size"
+            android:textStyle="bold"/>
+
+<!--        categories recycler view -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/home_categories_rv"
+            android:orientation="horizontal"
+            android:layout_below="@id/home_most_categories_tv_name"
+            />
+
+<!--        home body   >>  scroll -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/home_categories_rv"
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+<!--            android:layout_below="@id/main_scroll"-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/home_best_deal_tv"
+                android:text="@string/home_best_deals"
+                android:textAllCaps="false"
+                android:textSize="@dimen/home_heading_text_size"
+                android:textStyle="bold"
+                android:layout_marginStart="@dimen/home_heading_margin_start"/>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_best_deal_height"
+                android:id="@+id/home_best_deal_fl"
+                android:layout_marginTop="@dimen/home_heading_margin_top_bottom"
+                android:background="@color/colorPrimary">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/home_best_deal_iv"
+                    android:src="@drawable/eye"
+                    android:scaleType="fitXY"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/home_best_deal_name_tv"
+                    android:text="Turkish Meat"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/home_best_deal_name_text_size"
+                    android:gravity="center"
+                    android:background="#80000000"/>
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/home_most_popular_tv"
+                android:text="@string/home_most_poplar"
+                android:textAllCaps="false"
+                android:textSize="@dimen/home_heading_text_size"
+                android:textStyle="bold"
+                android:layout_marginStart="@dimen/home_heading_margin_start"
+                android:layout_marginTop="@dimen/home_heading_margin_top_bottom"/>
+
+            <ImageView
+                android:id="@+id/home_most_popular_iv"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="@dimen/home_heading_margin_top_bottom"
+                android:scaleType="centerCrop"
+                android:src="@drawable/breakfast" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/home_most_popular_name_tv"
+                    android:text="Forbidden_salad"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/home_heading_text_size"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_alignParentStart="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$ "
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/home_heading_text_size"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toLeftOf="@id/home_most_popular_price_tv"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/home_most_popular_price_tv"
+                    android:text="10"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/home_nav_view"
+        app:menu="@menu/navigation_menu"
+        android:layout_gravity="start"/>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

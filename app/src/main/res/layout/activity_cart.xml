@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cart">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<!--        cart toolbar-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/cart_toolbar"
+            android:background="@color/toolbar_color">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/cart_back_btn_height"
+                android:id="@+id/cart_back"
+                android:drawableLeft="@drawable/back_icon"
+                android:drawablePadding="-10dp"
+                android:text="@string/cart_back_btn"
+                android:textSize="@dimen/cart_back_btn_text_size"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/cart_back_btn_margin_top"
+                android:textAllCaps="false"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/cart_back_btn_margin_start" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@id/cart_back"
+                android:text="@string/cart_page_name_tv"
+                android:textSize="@dimen/cart_page_name_tv_text_size"
+                android:textStyle="bold"
+                android:gravity="center" />
+        </RelativeLayout>
+<!--        cart recyclerview-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cart_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cart_toolbar"
+            android:padding="@dimen/cart_rv_padding" />
+<!--        cart Linear Layout-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cart_linearLayout"
+            android:layout_below="@+id/cart_rv"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginHorizontal="@dimen/cart_LinearLayout_margin_horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/cart_LinearLayout_add_btn_height"
+                android:id="@+id/cart_btn_add_item"
+                android:text="@string/cart_add_item_btn"
+                android:textAllCaps="false"
+                android:layout_marginEnd="@dimen/cart_LinearLayout_add_btn_margin_end"
+                android:background="@drawable/button_shape"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/cart_LinearLayout_price_tv_height"
+                android:id="@+id/cart_total_price"
+                android:background="@drawable/cart_item_shape"
+                android:text="@string/cart_total_price_tv"
+                android:gravity="center"
+                android:textSize="@dimen/cart_LinearLayout_price_tv_text_size"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cart_order_btn_height"
+            android:id="@+id/cart_place_order"
+            android:layout_below="@id/cart_linearLayout"
+            android:layout_marginTop="@dimen/cart_order_btn_margin_top"
+            android:text="@string/cart_place_order_btn"
+            android:textSize="@dimen/cart_order_btn_text_size"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:background="@color/gray"
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

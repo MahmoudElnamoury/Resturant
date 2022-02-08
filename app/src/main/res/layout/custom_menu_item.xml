@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/custom_menu_item_padding_bottom">
+
+    <TextView
+        android:id="@+id/custom_menu_item_tv_name"
+        android:layout_width="@dimen/custom_menu_item_name_tv_width"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/custom_menu_item_name_tv_margin_start"
+        android:text="TextView"
+        android:textStyle="bold"
+        android:textSize="@dimen/custom_menu_item_name_tv_text_size"
+        android:gravity="start"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/custom_menu_item_iv" />
+
+    <TextView
+        android:id="@+id/custom_menu_item_tv_details"
+        android:layout_width="@dimen/custom_menu_item_details_tv_width"
+        android:layout_height="@dimen/custom_menu_item_details_tv_height"
+        android:layout_marginTop="@dimen/custom_menu_item_details_tv_margin_top"
+        android:text="TextView"
+        android:gravity="start"
+        app:layout_constraintStart_toStartOf="@+id/custom_menu_item_tv_name"
+        app:layout_constraintTop_toBottomOf="@+id/custom_menu_item_tv_name" />
+
+    <TextView
+        android:id="@+id/custom_menu_item_tv_price"
+        android:layout_width="@dimen/custom_menu_item_price_tv_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/custom_menu_item_price_tv_margin_top"
+        android:text="TextView"
+        android:textStyle="bold"
+        android:textSize="@dimen/custom_menu_item_price_tv_text_size"
+        android:gravity="start"
+        app:layout_constraintBottom_toBottomOf="@+id/custom_menu_item_iv"
+        app:layout_constraintStart_toStartOf="@+id/custom_menu_item_tv_details"
+        app:layout_constraintTop_toBottomOf="@+id/custom_menu_item_tv_details" />
+
+    <ImageView
+        android:id="@+id/custom_menu_item_iv"
+        android:layout_width="@dimen/custom_menu_item_iv_height_width"
+        android:layout_height="@dimen/custom_menu_item_iv_height_width"
+        android:src="@drawable/eye"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/custom_menu_item_tv_details"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/custom_menu_item_view_height"
+        android:layout_marginTop="@dimen/custom_menu_item_view_margin_top"
+        android:background="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/custom_menu_item_tv_price" />
+</androidx.constraintlayout.widget.ConstraintLayout>

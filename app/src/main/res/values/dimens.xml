@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    home activity dimens -->
+    <dimen name="nav_view_image_width_height">40dp</dimen>
+    <dimen name="nav_view_image_margin_top">5dp</dimen>
+    <dimen name="home_most_popular_height">40dp</dimen>
+    <dimen name="home_heading_margin_start">5dp</dimen>
+    <dimen name="home_heading_margin_top_bottom">10dp</dimen>
+    <dimen name="home_heading_text_size">18sp</dimen>
+    <dimen name="home_best_deal_name_text_size">18sp</dimen>
+    <dimen name="home_best_deal_height">200dp</dimen>
+<!--    list activity dimens -->
+    <dimen name="list_nav_view_image_width_height">40dp</dimen>
+    <dimen name="list_page_name_tv">18sp</dimen>
+    <dimen name="list_nav_view_image_margin_top">10dp</dimen>
+    <dimen name="list_rv_margin_top">10dp</dimen>
+    <dimen name="list_nav_view_image_margin_start_end">5dp</dimen>
+<!--    search activity dimens -->
+    <dimen name="search_nav_view_image_width_height">40dp</dimen>
+    <dimen name="search_nav_view_image_margin_top">10dp</dimen>
+    <dimen name="search_searchview_width">250dp</dimen>
+    <dimen name="search_searchview_margin_top">5dp</dimen>
+    <dimen name="search_rv_margin_top">10dp</dimen>
+    <dimen name="search_rv_margin_start">10dp</dimen>
+<!--    details activity dimens -->
+    <dimen name="details_back_btn_text_size">20sp</dimen>
+    <dimen name="details_back_btn_drawable_padding">-5dp</dimen>
+    <dimen name="details_back_btn_margin_start">5dp</dimen>
+    <dimen name="details_page_name_tv_text_size">20sp</dimen>
+    <dimen name="details_item_name_tv_height">40dp</dimen>
+    <dimen name="details_item_name_tv_text_size">17dp</dimen>
+    <dimen name="details_item_name_tv_margin_bottom">10dp</dimen>
+    <dimen name="details_item_name_tv_margin_start">10dp</dimen>
+    <dimen name="details_item_iv_height">200dp</dimen>
+    <dimen name="details_item_iv_padding">10dp</dimen>
+    <dimen name="details_item_details_tv_margin_start">10dp</dimen>
+    <dimen name="details_item_details_tv_margin_top">20dp</dimen>
+    <dimen name="details_item_details_tv_text_size">18sp</dimen>
+    <dimen name="details_Linear_Layout_height">55dp</dimen>
+    <dimen name="details_Linear_Layout_margin_top">40dp</dimen>
+    <dimen name="details_item_price_tv_margin_start">10dp</dimen>
+    <dimen name="details_item_price_tv_padding_top">10dp</dimen>
+    <dimen name="details_item_price_tv_padding_bottom">10dp</dimen>
+    <dimen name="details_item_price_tv_padding_horizontal">40dp</dimen>
+    <dimen name="details_item_price_tv_text_size">18sp</dimen>
+    <dimen name="details_ite_add_btn_margin_top">10dp</dimen>
+    <dimen name="details_ite_add_btn_margin_start">10dp</dimen>
+<!--    cart activity dimens -->
+    <dimen name="cart_back_btn_height">40dp</dimen>
+    <dimen name="cart_back_btn_text_size">18sp</dimen>
+    <dimen name="cart_back_btn_margin_top">10dp</dimen>
+    <dimen name="cart_back_btn_margin_start">5dp</dimen>
+    <dimen name="cart_page_name_tv_text_size">18sp</dimen>
+    <dimen name="cart_rv_padding">10dp</dimen>
+    <dimen name="cart_LinearLayout_margin_horizontal">5dp</dimen>
+    <dimen name="cart_LinearLayout_add_btn_height">40dp</dimen>
+    <dimen name="cart_LinearLayout_add_btn_margin_end">10dp</dimen>
+    <dimen name="cart_LinearLayout_price_tv_height">40dp</dimen>
+    <dimen name="cart_LinearLayout_price_tv_text_size">18sp</dimen>
+    <dimen name="cart_order_btn_height">60dp</dimen>
+    <dimen name="cart_order_btn_margin_top">5dp</dimen>
+    <dimen name="cart_order_btn_text_size">18sp</dimen>
+<!--    orders activity dimens -->
+    <dimen name="orders_nav_view_iv_height_width">40dp</dimen>
+    <dimen name="orders_nav_view_iv_margin_top">10dp</dimen>
+    <dimen name="orders_page_name_tv_width">300dp</dimen>
+    <dimen name="orders_page_name_tv_text_size">18sp</dimen>
+    <dimen name="orders_rv_padding">10dp</dimen>
+<!--    custom cart item dimens -->
+    <dimen name="custom_cart_item_padding">5dp</dimen>
+    <dimen name="custom_cart_item_margin_top">5dp</dimen>
+    <dimen name="custom_cart_item_num_tv_width">20dp</dimen>
+    <dimen name="custom_cart_item_num_tv_margin_start">10dp</dimen>
+    <dimen name="custom_cart_item_num_tv_text_size">18sp</dimen>
+    <dimen name="custom_cart_item_name_tv_width">300dp</dimen>
+    <dimen name="custom_cart_item_name_tv_margin_start">15dp</dimen>
+    <dimen name="custom_cart_item_name_tv_text_size">18sp</dimen>
+    <dimen name="custom_cart_item_price_tv_margin_end">10dp</dimen>
+    <dimen name="custom_cart_item_price_tv_text_size">18sp</dimen>
+<!--    custom home category dimens -->
+    <dimen name="custom_home_categories_iv_height_width">70dp</dimen>
+    <dimen name="custom_home_categories_iv_margin_start">20dp</dimen>
+    <dimen name="custom_home_categories_name_tv_margin_top">10dp</dimen>
+    <dimen name="custom_home_categories_name_tv_text_size">15sp</dimen>
+<!--    custom list item dimens -->
+    <dimen name="custom_list_item_card_elevation">10dp</dimen>
+    <dimen name="custom_list_item_card_corner_raduis">20dp</dimen>
+    <dimen name="custom_list_item_card_margin_top">5dp</dimen>
+    <dimen name="custom_list_item_iv_height">170dp</dimen>
+    <dimen name="custom_list_item_iv_margin_horizontal">20dp</dimen>
+    <dimen name="custom_list_item_tv_name_margin_top">5dp</dimen>
+    <dimen name="custom_list_item_tv_name_margin_start">10dp</dimen>
+    <dimen name="custom_list_item_price_tv_margin_top">5dp</dimen>
+    <dimen name="custom_list_item_price_tv_margin_end">10dp</dimen>
+<!--    custom menu item dimens-->
+    <dimen name="custom_menu_item_padding_bottom">10dp</dimen>
+    <dimen name="custom_menu_item_name_tv_width">250dp</dimen>
+    <dimen name="custom_menu_item_name_tv_margin_start">16dp</dimen>
+    <dimen name="custom_menu_item_name_tv_text_size">17sp</dimen>
+    <dimen name="custom_menu_item_details_tv_width">250dp</dimen>
+    <dimen name="custom_menu_item_details_tv_height">50dp</dimen>
+    <dimen name="custom_menu_item_details_tv_margin_top">5dp</dimen>
+    <dimen name="custom_menu_item_price_tv_width">250dp</dimen>
+    <dimen name="custom_menu_item_price_tv_margin_top">10dp</dimen>
+    <dimen name="custom_menu_item_price_tv_text_size">15sp</dimen>
+    <dimen name="custom_menu_item_iv_height_width">100dp</dimen>
+    <dimen name="custom_menu_item_view_height">2dp</dimen>
+    <dimen name="custom_menu_item_view_margin_top">5dp</dimen>
+<!--    custom order dimens -->
+    <dimen name="custom_order_card_elevation">5dp</dimen>
+    <dimen name="custom_order_card_corner_radius">20dp</dimen>
+    <dimen name="custom_order_iv_height">100dp</dimen>
+    <dimen name="custom_order_iv_margin_top">4dp</dimen>
+    <dimen name="custom_order_rv_padding">10dp</dimen>
+    <dimen name="custom_order_price_tv_width">300dp</dimen>
+    <dimen name="custom_order_price_tv_padding_top_bottom">5dp</dimen>
+    <dimen name="custom_order_price_tv_text_size">18sp</dimen>
+    <dimen name="custom_order_reorder_btn_width">100dp</dimen>
+    <dimen name="custom_order_reorder_btn_margin_top">4dp</dimen>
+    <dimen name="custom_order_cancel_order_btn_margin_top">12dp</dimen>
+
+
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardElevation="@dimen/custom_list_item_card_elevation"
+    app:cardCornerRadius="@dimen/custom_list_item_card_corner_raduis"
+    app:cardUseCompatPadding="true"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="@dimen/custom_list_item_card_margin_top"
+    >
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:paddingBottom="10dp"
+    >
+    <ImageView
+        android:id="@+id/custom_list_item_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/custom_list_item_iv_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/eye"
+        android:scaleType="centerCrop"
+        android:layout_marginHorizontal="@dimen/custom_list_item_iv_margin_horizontal"/>
+
+    <TextView
+        android:id="@+id/custom_list_item_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/custom_list_item_tv_name_margin_top"
+        android:layout_marginStart="@dimen/custom_list_item_tv_name_margin_start"
+        android:text="TextView"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/custom_list_item_iv"
+        app:layout_constraintTop_toBottomOf="@+id/custom_list_item_iv" />
+
+    <TextView
+        android:id="@+id/custom_list_item_tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/custom_list_item_price_tv_margin_top"
+        android:layout_marginEnd="@dimen/custom_list_item_price_tv_margin_end"
+        android:text="TextView"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/custom_list_item_iv"
+        app:layout_constraintTop_toBottomOf="@+id/custom_list_item_iv" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
